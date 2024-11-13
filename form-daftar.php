@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="id">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../styles/style.css">
-	<title>Formulir Pendaftaran Siswa Baru</title>
-</head>
-
-<body>
+<div>
 	<div id="myModal" class="modal-container">
 		<div class="modal-content">
 			<h3>Formulir Pendaftaran Siswa Baru <span class="close" onclick="closeModal()">&times;</span></h3>
@@ -29,7 +19,7 @@
 				</div>
 				<div class="input-field">
 					<label for="agama">Agama: </label>
-					<select name="agama">
+					<select name="agama" require>
 						<option>Islam</option>
 						<option>Kristen</option>
 						<option>Hindu</option>
@@ -39,7 +29,7 @@
 				</div>
 				<div class="input-field">
 					<label for="sekolah_asal">Sekolah Asal: </label>
-					<input type="text" name="sekolah_asal" placeholder="nama sekolah" />
+					<input type="text" name="sekolah_asal" require placeholder="nama sekolah" />
 				</div>
 
 				<button type="submit" value="Daftar" name="daftar" class="send" onclick="closeModal()">Daftar</button>
@@ -47,6 +37,4 @@
 		</div>
 	</div>
 
-</body>
-
-</html>
+</div>

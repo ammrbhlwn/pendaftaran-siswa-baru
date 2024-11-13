@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html lang="id">
+<script>
+    function openEditModal() {
+        document.getElementById("editModal").style.display = "block";
+    }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles//style.css">
-    <title>Formulir Edit Siswa | SMK Coding</title>
-    <script>
-        function openEditModal() {
-            document.getElementById("editModal").style.display = "block";
-        }
+    function closeEditModal() {
+        document.getElementById("editModal").style.display = "none";
+    }
+</script>
 
-        function closeEditModal() {
-            document.getElementById("editModal").style.display = "none";
-        }
-    </script>
-</head>
-
-<body>
+<div>
     <div id="editModal" class="modal-container" style="display:none;">
         <div class="modal-content">
             <h3>Edit Siswa <span class="close" onclick="closeEditModal()">&times;</span></h3>
@@ -58,6 +49,4 @@
     </div>
 
     <button class="back" onclick="window.location.href='index.php'">Kembali</button>
-</body>
-
-</html>
+</div>
